@@ -1,20 +1,16 @@
 {
-  "name": "pancake-toolkit",
+  "name": "@durianexchange/toolkit",
   "version": "1.0.0",
-  "description": "Pancake frontend packages",
+  "description": "Durian Exchange frontend packages",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pancakeswap/pancake-toolkit.git"
+    "url": "https://github.com/DurianExchange/durian-toolkit.git"
   },
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pancakeswap/pancake-toolkit/issues"
-  },
-  "homepage": "https://github.com/pancakeswap/pancake-toolkit#readme",
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
@@ -23,18 +19,13 @@
     "storybook:build": "lerna run storybook:build",
     "release": "yarn build && yarn lerna publish"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format:check",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
+  
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
-    "@pancakeswap-libs/eslint-config-pancake": "0.1.0",
+    "@durianexchange/eslint-config-durian": "1.0.2",
     "@rollup/plugin-typescript": "^8.2.1",
     "@rollup/plugin-url": "^6.0.0",
     "@storybook/addon-a11y": "^6.2.1",
